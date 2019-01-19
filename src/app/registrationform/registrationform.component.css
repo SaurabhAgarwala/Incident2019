@@ -1,0 +1,61 @@
+registration-form {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    padding: 48px 0 48px 0;
+}
+
+@media only screen and (min-width: 700px) {
+
+    registration-form form, registration-form .contact-mobile {
+        display: inline-block;
+        width: 600px;
+    }
+
+}
+
+registration-form h4 {
+    font-weight: 700;
+}
+
+/* label color */
+registration-form .input-field label {
+    color: #002D54;
+    font-weight: 500;
+    opacity: 0.7;
+}
+/* label focus color */
+registration-form .input-field input:focus + label, registration-form .input-field textarea:focus + label {
+    color: #002D54;
+    opacity: 1;
+}
+/* label underline focus color */
+registration-form .input-field input:focus, registration-form .input-field textarea:focus {
+    border-bottom: 1px solid #002D54;
+    box-shadow: 0 1px 0 0 #002D54;
+}
+/* valid color */
+registration-form .input-field input.valid, registration-form .input-field textarea.valid {
+    border-bottom: 1px solid #002D54;
+    box-shadow: 0 1px 0 0 #002D54;
+}
+/* invalid color */
+registration-form .input-field input.invalid, registration-form .input-field textarea.invalid {
+    border-bottom: 1px solid #002D54;
+    box-shadow: 0 1px 0 0 #002D54;
+}
+/* icon prefix focus color */
+registration-form .input-field .prefix.active {
+    color: #002D54;
+}
+
+@media only screen and (max-width: 700px) {
+
+    registration-form {
+        border: 0;
+    }
+
+    registration-form .form {
+        width: 100%;
+    }
+
+}
