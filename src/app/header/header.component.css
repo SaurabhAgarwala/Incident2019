@@ -33,6 +33,7 @@
 }
 
 .header .nav-links li:hover {
+    color: white;
     text-decoration: underline;
 }
 
