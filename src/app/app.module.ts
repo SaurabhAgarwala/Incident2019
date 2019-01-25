@@ -13,6 +13,7 @@ import { IcareComponent } from './icare/icare.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { FourOhFourComponent } from './four-oh-four/four-oh-four.component';
 
 const appRoutes: Routes = [
   {
@@ -44,6 +45,10 @@ const appRoutes: Routes = [
     component: ContactusComponent,
     data: { title: 'Incident 2019 - Contact Us' }
   },
+  {
+    path: '404',
+    component: FourOhFourComponent
+  },
 ];
 
 
@@ -61,7 +66,8 @@ const appRoutes: Routes = [
     IcareComponent,
     SponsorsComponent,
     FooterComponent,
-    ContactusComponent
+    ContactusComponent,
+    FourOhFourComponent
   ],
   imports: [
     BrowserModule,
