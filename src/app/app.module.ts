@@ -13,7 +13,7 @@ import { IcareComponent } from './icare/icare.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactusComponent } from './contactus/contactus.component';
-import { RegistrationformComponent } from './registrationform/registrationform.component';
+import { FourOhFourComponent } from './four-oh-four/four-oh-four.component';
 
 const appRoutes: Routes = [
   {
@@ -49,6 +49,10 @@ const appRoutes: Routes = [
     component: RegistrationformComponent,
     data: { title: 'Incident 2019 - Registration Form' }
   },
+  {
+    path: '404',
+    component: FourOhFourComponent
+  },
 ];
 
 
@@ -67,7 +71,7 @@ const appRoutes: Routes = [
     SponsorsComponent,
     FooterComponent,
     ContactusComponent,
-    RegistrationformComponent
+    FourOhFourComponent
   ],
   imports: [
     BrowserModule,
